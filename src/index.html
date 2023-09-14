@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html en-US>
+
+<head>
+  <title>Currency Exchanger Calculator</title>
+</head>
+
+<body>
+  <h1>Currency Exchange Calculator</h1>
+  <p>To get an accurate conversion of USD to any other currency, use table below to check enter 3 letter ISO code into
+    text box</p>
+  <div id="currency-list">
+    <ul id="currency-table">
+      <li>AED: Arabic dirham</li>
+      <li>AFN: afghani</li>
+      <li>ALL: lek</li>
+      <li>AMD: dram</li>
+      <li>ANG: Netherlands Antillean guilder</li>
+      <li>AOA: kwanza</li>
+      <li>ARS: Argentine peso</li>
+      <li>AUD: Australian dollar</li>
+      <li>AWG: guilder</li>
+      <li>AZN: manat</li>
+      <li>BAM: Convertible mark</li>
+      <li>BBD: Barbadian dollar</li>
+      <li>BDT: taka</li>
+      <li>BGN: Bulgarian lev</li>
+      <li>BHD: Bahrain dinar</li>
+      <li>BIF: Burundi franc</li>
+      <li>BMD: Bermudian dollar</li>
+      <li>BND: Brunei dollar</li>
+      <li>BOB: boliviano</li>
+      <li>BRL: Brazilian real</li>
+      <li>BSD: Bahamian dollar</li>
+      <li>BTN: ngultrum</li>
+      <li>BWP: pula</li>
+      <li>BYR: Belarus rubel</li>
+      <li>BZD: Belize dollar</li>
+      <li>CAD: Canadian dollar</li>
+      <li>CDF: Congolais franc</li>
+      <li>CHF: Swiss franc</li>
+      <!-- <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li> -->
+    </ul>
+  </div>
+  <div form-input>
+    <form id="currency-calculator">
+      <label for="usd-amount">Amount in USD</label>
+      <input id="usd-amount" type="number" name="currency-calculation">
+      <label for="type-of-currency">3 Letter ISO Code</label>
+      <input id="type-of-currency" type="text" name="currency-calculation">
+      <button type="submit" class="btn-currency-calc" id="submit-calc-btn">Calculate</button>
+    </form>
+    <p id="show-response"></p>
+  </div>
+</body>
+
+</html>
