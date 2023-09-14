@@ -20,5 +20,12 @@ function printError(error, currency) {
 }
 
 function printElements(data) {
-  document.querySelector('#showResponse').innerText = `The USD to ${data[1]} conversion is ${data[0].conversion_result}.`
+  document.querySelector("#showResponse").innerText = `The USD to ${data[1]} conversion is ${data[0].conversion_result}.`
+}
+
+function handleFormSubmission(event) {
+  event.preventDefault();
+  const currencyCode = document.querySelector("#type-of-currency").value;
+  const amountInUSD = document.querySelector("#usd-amount").value;
+  getExchangeRates(currencyCode, amountInUSD);
 }
