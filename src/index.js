@@ -6,6 +6,7 @@ import CurrencyExchangerApi from './js/CurrencyExchangerApi';
 async function getExchangeRates(currencyCode, amountInUSD) {
   const response = await CurrencyExchangerApi.newCurrencyExchangeApiCall(currencyCode, amountInUSD);
   if (response["result"] == "success") {
+    console.log(currencyCode);
     console.log(response);
     printElements(response, currencyCode);
   } else {
@@ -18,7 +19,6 @@ function printError(error, currency) {
   ${error}`
 }
 
-// function printElements(data) {
-//   document.querySelector('#showResponse').innerText = ``
-// }
-
+function printElements(data) {
+  document.querySelector('#showResponse').innerText = `The USD to ${data[1]} conversion is ${data[0].conversion_result}.`
+}
