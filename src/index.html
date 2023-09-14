@@ -6,56 +6,183 @@
 </head>
 
 <body>
-  <h1>Currency Exchange Calculator</h1>
-  <p>To get an accurate conversion of USD to any other currency, use table below to check enter 3 letter ISO code into
-    text box</p>
-  <div id="currency-list">
-    <ul id="currency-table">
-      <li>AED: Arabic dirham</li>
-      <li>AFN: afghani</li>
-      <li>ALL: lek</li>
-      <li>AMD: dram</li>
-      <li>ANG: Netherlands Antillean guilder</li>
-      <li>AOA: kwanza</li>
-      <li>ARS: Argentine peso</li>
-      <li>AUD: Australian dollar</li>
-      <li>AWG: guilder</li>
-      <li>AZN: manat</li>
-      <li>BAM: Convertible mark</li>
-      <li>BBD: Barbadian dollar</li>
-      <li>BDT: taka</li>
-      <li>BGN: Bulgarian lev</li>
-      <li>BHD: Bahrain dinar</li>
-      <li>BIF: Burundi franc</li>
-      <li>BMD: Bermudian dollar</li>
-      <li>BND: Brunei dollar</li>
-      <li>BOB: boliviano</li>
-      <li>BRL: Brazilian real</li>
-      <li>BSD: Bahamian dollar</li>
-      <li>BTN: ngultrum</li>
-      <li>BWP: pula</li>
-      <li>BYR: Belarus rubel</li>
-      <li>BZD: Belize dollar</li>
-      <li>CAD: Canadian dollar</li>
-      <li>CDF: Congolais franc</li>
-      <li>CHF: Swiss franc</li>
-      <!-- <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li> -->
-    </ul>
-  </div>
-  <div form-input>
-    <form id="currency-calculator">
-      <label for="usd-amount">Amount in USD</label>
-      <input id="usd-amount" type="number" name="currency-calculation">
-      <label for="type-of-currency">3 Letter ISO Code</label>
-      <input id="type-of-currency" type="text" name="currency-calculation">
-      <button type="submit" class="btn-currency-calc" id="submit-calc-btn">Calculate</button>
-    </form>
-    <p id="show-response"></p>
+  <div id="container">
+    <div id="currency-list">
+      <ul id="currency-table">
+        <li>AED: Arabic dirham</li>
+        <li>AFN: afghani</li>
+        <li>ALL: lek</li>
+        <li>AMD: dram</li>
+        <li>ANG: Netherlands Antillean guilder</li>
+        <li>AOA: kwanza</li>
+        <li>ARS: Argentine peso</li>
+        <li>AUD: Australian dollar</li>
+        <li>AWG: guilder</li>
+        <li>AZN: manat</li>
+        <li>BAM: Convertible mark</li>
+        <li>BBD: Barbadian dollar</li>
+        <li>BDT: taka</li>
+        <li>BGN: Bulgarian lev</li>
+        <li>BHD: Bahrain dinar</li>
+        <li>BIF: Burundi franc</li>
+        <li>BMD: Bermudian dollar</li>
+        <li>BND: Brunei dollar</li>
+        <li>BOB: boliviano</li>
+        <li>BRL: Brazilian real</li>
+        <li>BSD: Bahamian dollar</li>
+        <li>BTN: ngultrum</li>
+        <li>BWP: pula</li>
+        <li>BYR: Belarus rubel</li>
+        <li>BZD: Belize dollar</li>
+        <li>CAD: Canadian dollar</li>
+        <li>CDF: Congolais franc</li>
+        <li>CHF: Swiss franc</li>
+        <li>CKD: Cook dollar</li>
+        <li>CLP: Chilean peso</li>
+        <li>CNY: Renminbi yuan</li>
+        <li>COP: Colombian peso</li>
+        <li>CRC: colón</li>
+        <li>CUP: Cuban peso</li>
+        <li>CVE: Cape Verdean escudo</li>
+        <li>CZK: Czech krone</li>
+        <li>DJF: Djibouti franc</li>
+        <li>DKK: Danish krone</li>
+        <li>DOP: Dominican peso</li>
+        <li>DZD: Algerian dinar</li>
+        <li>EGP: Egypt pound</li>
+        <li>ERN: nakfa</li>
+        <li>ETB: birr</li>
+        <li>EUR: euro</li>
+        <li>FJD: Fiji dollar</li>
+        <li>FKP: Falklands pound</li>
+        <li>FOK: Faroese krona</li>
+        <li>GBP: Sterling pound</li>
+        <li>GEL: Georgian lari</li>
+        <li>GGP: Guernsey pound</li>
+        <li>GHS: Ghana cedi</li>
+        <li>GIP: Gibraltar pound</li>
+        <li>GMD: dalasi</li>
+        <li>GNF: Guinea franc</li>
+        <li>GTQ: quetzal</li>
+        <li>GYD: Guyana dollar</li>
+        <li>HKD: Hong Kong dollar</li>
+        <li>HNL: lempira</li>
+        <li>HTG: gourde</li>
+        <li>HUF: Hungarian forint</li>
+        <li>IDR: Indonesian rupiah</li>
+        <li>ILS: New Israeli sheqel</li>
+        <li>IMP: Manx pound</li>
+        <li>INR: Indian rupee</li>
+        <li>IQD: Iraqi dinar</li>
+        <li>IRR: Iranian rial</li>
+        <li>ISK: Icelandic krone</li>
+        <li>JEP: Jersey Sterling pound</li>
+        <li>JMD: Jamaica dollar</li>
+        <li>JOD: Jordanian dinar</li>
+        <li>JPY: Japanese yen</li>
+        <li>KES: Kenyan shilling</li>
+        <li>KGS: som</li>
+        <li>KHR: Cambodian riel</li>
+        <li>KID: Kiribati dollar</li>
+        <li>KMF: Comorian franc</li>
+        <li>KPW: North Korean won</li>
+        <li>KRW: South Korean won</li>
+        <li>KWD: Kuwaiti dinar</li>
+        <li>KYD: Cayman dollar</li>
+        <li>KZT: tenge</li>
+        <li>LAK: kip</li>
+        <li>LBP: Lebanese pound</li>
+        <li>LKR: Sri Lanka rupee</li>
+        <li>LRD: Liberian dollar</li>
+        <li>LSL: Lesotho loti</li>
+        <li>MAD: Moroccan dirham</li>
+        <li>MDL: Moldovan leu</li>
+        <li>MGA: Malagasy ariary</li>
+        <li>MKD: denar</li>
+        <li>MMK: kyat</li>
+        <li>MNT: tugrik</li>
+        <li>MOP: Macanese pataca</li>
+        <li>MRO: Mauritanian ouguiya</li>
+        <li>MUR: Mauritian rupee</li>
+        <li>MVR: Maldivian rufiyaa</li>
+        <li>MWK: Malawian kwacha</li>
+        <li>MXN: Mexican peso</li>
+        <li>MYR: ringgit</li>
+        <li>MZN: metical</li>
+        <li>NAD: Namibian dollar</li>
+        <li>NGN: naira</li>
+        <li>NIO: Córdoba oro</li>
+        <li>NOK: Norwegian krone/li>
+        <li>NPR: Nepalese rupee</li>
+        <li>NZD: New Zealand dollar</li>
+        <li>OMR: Omani rial</li>
+        <li>PAB: Panamanian balboa</li>
+        <li>PEN: Nuevo sol</li>
+        <li>PGK: kina</li>
+        <li>PHP: Philippine peso</li>
+        <li>PKR: Pakistanian rupee</li>
+        <li>PLN: zloty</li>
+        <li>PYG: guaraní</li>
+        <li>QAR: Qatari rial</li>
+        <li>RON: Romanian leu</li>
+        <li>RSD: Serbian dinar</li>
+        <li>RUB: Russian rubel</li>
+        <li>RWF: Rwandan franc</li>
+        <li>SAR: Saudi rial</li>
+        <li>SBD: Salomon dollar</li>
+        <li>SCR: Seychelles rupee</li>
+        <li>SDG: Sudanese pound</li>
+        <li>SEK: Swedish krone</li>
+        <li>SGD: Singapore dollar</li>
+        <li>SHP: St.-Helena pound</li>
+        <li>SLL: leone</li>
+        <li>SOS: Somalian shilling</li>
+        <li>SRD: Surinam dollar</li>
+        <li>SSP: South Sudanese pound</li>
+        <li>STD: dobra</li>
+        <li>SYP: Syrian pound</li>
+        <li>SZL: Swazi lilangeni</li>
+        <li>THB: Thai baht</li>
+        <li>TJS: somoni</li>
+        <li>TMT: Turkmen manat</li>
+        <li>TND: Tunesian dinar</li>
+        <li>TOP: pa'anga</li>
+        <li>TRY: Turkish lira</li>
+        <li>TTD: Trinidad and Tobago dollar</li>
+        <li>TVD: Tuvaluan dollar</li>
+        <li>TWD: New Taiwan dollar</li>
+        <li>TZS: Tansanian shilling</li>
+        <li>UAH: hrywnja</li>
+        <li>UGX: Ugandan shilling</li>
+        <li>UYU: Uruguay peso</li>
+        <li>UZS: Uzbekistan sum</li>
+        <li>VED: bolivar digital</li>
+        <li>VND: dong</li>
+        <li>VUV: vatu</li>
+        <li>WST: tala</li>
+        <li>XAF: cfa-franc beac</li>
+        <li>XCD: East Caribbean dollar</li>
+        <li>XOF: cfa-franc bceao</li>
+        <li>XPF: Pacific franc</li>
+        <li>YER: Jemen rial</li>
+        <li>ZAR: South African rand</li>
+        <li>ZMW: Zambian kwacha</li>
+        <li>ZWL: Zimbabwe dollar</li>
+      </ul>
+    </div>
+    <div form-input>
+      <h1>Currency Exchange Calculator</h1>
+      <p>To get an accurate conversion of USD to any other currency.</p>
+      <p>Use sidebar to check for ISO code and enter below.</p>
+      <form id="currency-calculator">
+        <label for="usd-amount">Amount in USD</label>
+        <input id="usd-amount" type="number" name="currency-calculation">
+        <label for="type-of-currency">3 Letter ISO Code</label>
+        <input id="type-of-currency" type="text" name="currency-calculation">
+        <button type="submit" class="btn-currency-calc" id="submit-calc-btn">Calculate</button>
+      </form>
+      <p id="show-response"></p>
+    </div>
   </div>
 </body>
 
