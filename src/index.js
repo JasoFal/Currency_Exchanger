@@ -6,7 +6,7 @@ import CurrencyExchangerApi from './js/CurrencyExchangerApi';
 async function getExchangeRates(currencyCode, amountInUSD) {
   const response = await CurrencyExchangerApi.newCurrencyExchangeApiCall(currencyCode, amountInUSD);
   if (response["result"] == "success") {
-    printElements(response, currencyCode);
+    printElements(response, amountInUSD, currencyCode);
   } else {
     printError(response, currencyCode);
   }
@@ -17,8 +17,9 @@ function printError(error, currency) {
   ${error}`;
 }
 
-function printElements(data) {
-  document.querySelector("#show-response").innerText = `The ${data.base_code} to ${data.target_code} conversion is ${data.conversion_result} at a rate of ${data.conversion_rate}.`;
+function printElements(data, amountInUSD) {
+  document.querySelector("#show-response").innerText = `${amountInUSD} ${data.base_code} converts to ${Math.round((data.conversion_result + Number.EPSILON) * 100) / 100} ${data.target_code}
+  At a rate of 1USD to ${Math.round((data.conversion_rate + Number.EPSILON) * 100) / 100} ${data.target_code}`;
 }
 
 function handleFormSubmission(event) {
