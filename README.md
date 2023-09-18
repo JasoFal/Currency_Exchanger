@@ -23,7 +23,7 @@ _A Fidgetech independent project created in order to demonstrate knowledge of Ap
 * _And create free account to obtain API key_
 -----
 * _Open Git Bash type in git clone and then copy and paste <mark>https://github.com/JasoFal/Currency_Exchanger.git<mark>_
-* _Once cloned open program using either Git Bash/ a terminal of your choice. Or going into file explorer and opening it manually._
+* _Once cloned open program using either Git Bash/ a terminal of your choice using the cd command to reach file. Or going into file explorer and opening it manually._
 * _Once opened create a .env file at the top level of directory by typing in the terminal git touch .env_
 * _Type API_KEY = (your Api Key here) in your .env file_
 -----
