@@ -1,7 +1,7 @@
 {
   "name": "currency-exchange-calculator",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Fidgetech independent project created in order to demonstrate knowledge of Apis and Asynchrony. To use enter amount of USD as well as the ISO code for currency you want to convert it into.",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=development",
