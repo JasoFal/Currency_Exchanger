@@ -19,7 +19,7 @@ function printError(error, currency) {
 
 function printElements(data, amountInUSD) {
   document.querySelector("#show-response").innerText = `${amountInUSD} ${data.base_code} converts to ${Math.round((data.conversion_result + Number.EPSILON) * 100) / 100} ${data.target_code}
-  At a rate of 1USD to ${Math.round((data.conversion_rate + Number.EPSILON) * 100) / 100} ${data.target_code}`;
+  At a rate of 1 USD to ${Math.round((data.conversion_rate + Number.EPSILON) * 100) / 100} ${data.target_code}`;
 }
 
 function handleFormSubmission(event) {
